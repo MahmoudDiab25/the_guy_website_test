@@ -33,13 +33,16 @@
     width: 191px;
     max-width: 95%;
     line-height: 34px;
-    padding-top: 4px;
+    padding: 4px 0;
     font-size: 20px;
     font-weight: 300;
     background-color: #431f4d;
     border-radius: 20px;
     color: #fff;
     margin-bottom: 20px;
+    &:hover {
+      color: #20c997;
+    }
   }
 }
 
