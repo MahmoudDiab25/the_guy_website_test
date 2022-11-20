@@ -1,21 +1,19 @@
 .conatiner {
   position: fixed;
   width: 100%;
-  bottom: 0;
-  height: 60px;
+  bottom: -175px;
+  height: 256px;
   background-color: #431f4d;
+  transition: bottom 0.5s ease-out;
 
   .innerContainer {
-    height: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    height: auto;
     display: flex;
-    justify-content: center;
     align-items: center;
-
+    padding: 25px 0;
+    flex-direction: column;
     .title {
+      padding-bottom: 20px;
       .text {
         font-size: 24px;
         color: #fff;
@@ -42,5 +40,56 @@
         vertical-align: middle;
       }
     }
+
+    .buttoms {
+      display: flex;
+      flex-direction: column;
+      .customSelect {
+        margin-bottom: 20px;
+        background: #431f4d;
+        padding: 10px 20px;
+        border-radius: 25px;
+        border: 2px solid #ffffff80;
+        color: #fff;
+        font-size: 20px;
+        > option {
+          bottom: 100%;
+          background: #fff;
+          color: black;
+          position: relative;
+          bottom: 50px;
+        }
+      }
+      > span {
+        padding: 10px 20px;
+        background-color: #307f68;
+        border-radius: 25px;
+        color: #fff;
+        font-size: 20px;
+        height: 50px;
+        width: 282px;
+      }
+    }
+  }
+}
+
+.goUp {
+  bottom: -15px;
+}
+
+@media screen and (min-width: 770px) {
+  .conatiner {
+    height: 200px;
+    bottom: -120px;
+    .innerContainer {
+      .buttoms {
+        flex-direction: row;
+        width: 700px;
+        justify-content: space-evenly;
+      }
+    }
+  }
+  .goUp {
+    bottom: -15px;
   }
 }

@@ -1,4 +1,17 @@
 .container {
+  overflow-y: scroll;
+  height: 100vh;
+  &::-webkit-scrollbar {
+    width: 7px;
+    display: block;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: #cccccc;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #00bc6e;
+  }
+
   .seaconOne {
     background-color: #f6f4f6;
     margin-top: 0;
