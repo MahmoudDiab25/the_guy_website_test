@@ -48,11 +48,14 @@
 
 .showNav {
   background-color: #431f4d;
-  position: absolute;
   position: fixed;
   z-index: 10;
   width: 400px;
   height: 91%;
+  transition: 0.7s linear;
+  transition-property: visibility, opacity;
+  opacity: 0;
+  visibility: hidden;
   .title {
     display: flex;
     width: auto;
@@ -87,6 +90,29 @@
       border: 1px solid #431f4d;
       border-bottom-color: #cccbcb5c;
     }
+  }
+}
+
+.fadeIn {
+  visibility: visible;
+  opacity: 1;
+}
+
+// @keyframes fade-in {
+//   from {
+//     display: 1;
+//   }
+//   to {
+//     opacity: 0;
+//   }
+// }
+
+@keyframes fade-out {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
