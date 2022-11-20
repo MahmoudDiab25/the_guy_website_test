@@ -1,0 +1,46 @@
+.conatiner {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 60px;
+  background-color: #431f4d;
+
+  .innerContainer {
+    height: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      .text {
+        font-size: 24px;
+        color: #fff;
+        margin-left: 15px;
+        vertical-align: middle;
+      }
+
+      .arrow {
+        border: solid #00bc6e;
+        border-width: 0 5px 5px 0;
+        border-radius: 3px;
+        display: inline-block;
+        padding: 8px 8px 8px 8px;
+        vertical-align: bottom;
+      }
+
+      .up {
+        transform: rotate(-135deg);
+        vertical-align: bottom;
+      }
+
+      .down {
+        transform: rotate(45deg);
+        vertical-align: middle;
+      }
+    }
+  }
+}

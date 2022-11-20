@@ -1,0 +1,35 @@
+.rightArrow {
+  position: absolute;
+  right: -10px;
+  border: 0;
+  background: none;
+}
+.leftArrow {
+  position: absolute;
+  left: -10px;
+  border: 0;
+  background: none;
+  transform: rotateY(180deg);
+}
+
+.itemClass {
+  display: flex;
+  justify-content: center;
+}
+.containerClass {
+  width: auto;
+  overflow: hidden !important;
+}
+
+.sliderClass {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 280px) {
+  .sliderClass {
+    padding-bottom: 30px;
+  }
+}

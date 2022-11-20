@@ -1,0 +1,207 @@
+.container {
+  .seaconOne {
+    background-color: #f6f4f6;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 0;
+
+    .wrapper {
+      width: 100%;
+      height: 680px;
+      display: flex;
+      margin-bottom: -100px;
+      padding: 150px 40px 100px;
+      align-items: flex-start;
+      background-position: 0 100%;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-image: url("https://lps.meitav.co.il/images/available-money/people_bg.png");
+      margin: 0 auto;
+      position: relative;
+      .innerWrapper {
+        text-align: center;
+        margin: 0 auto;
+        width: 1200px;
+        max-width: 100%;
+        .innerContainer {
+          > h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: 500;
+            line-height: 1;
+            color: #323232;
+            > span {
+              margin-right: 5px;
+              color: #00bc6e;
+              line-height: 1;
+            }
+          }
+          > h2 {
+            font-size: 18px;
+            font-weight: 100;
+            line-height: 1.3;
+            margin-bottom: 10px;
+            color: #323232a9;
+          }
+        }
+      }
+    }
+  }
+
+  .seaconTwo {
+    height: auto;
+    background-color: #f6f4f6;
+    .sliderContainer {
+      position: relative;
+      bottom: 60px;
+    }
+  }
+
+  .seaconThree {
+    background-color: #e0e6e9;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 30px 60px;
+    .profileImg {
+      margin: 15px 0px 15px 0px;
+    }
+    .title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      > span {
+        width: 110px;
+        display: block;
+        margin-bottom: auto;
+        background-color: #00bc6e;
+        height: 5px;
+        align-self: center;
+        margin-top: 15px;
+      }
+    }
+    .partTwo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .title {
+        margin-bottom: 50px;
+        h1 {
+          margin: 0;
+          margin-top: 60px;
+        }
+      }
+      .cardContainer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 30px;
+        margin: 0;
+        list-style-type: none;
+        padding: 0;
+      }
+    }
+  }
+
+  .seaconFour {
+    padding: 40px 0 90px;
+    text-align: center;
+    background-color: #431f4d;
+    .innerContainer {
+      max-width: 100%;
+      padding: 0 5%;
+      > p {
+        margin: 0 auto;
+        font-size: 15px;
+        line-height: 1.3;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .container {
+    .seaconOne {
+      .wrapper {
+        padding-top: 90px;
+      }
+    }
+
+    .seaconThree {
+      .partTwo {
+        .title {
+          h1 {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 994px) {
+  .container {
+    .seaconOne {
+      .wrapper {
+        background-size: 50%;
+        background-position: left center;
+        align-items: center;
+        max-width: 1920px;
+        height: 490px;
+        padding: unset;
+        .innerWrapper {
+          margin: 0 10%;
+          .innerContainer {
+            text-align: right;
+            max-width: 500px;
+
+            > h1 {
+              font-size: 50px;
+              margin: 0;
+              margin-bottom: 20px;
+              font-weight: normal;
+            }
+          }
+        }
+      }
+    }
+    .seaconThree {
+      .partTwo {
+        margin-top: 30px;
+        .title {
+          margin-bottom: 30px;
+        }
+        .cardContainer {
+          flex-wrap: wrap;
+          justify-content: space-between;
+          display: flex;
+          justify-content: space-between;
+          gap: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    .seaconOne {
+      .wrapper {
+        background-size: unset;
+        .innerWrapper {
+          .innerContainer {
+            > h1 {
+              font-size: 43px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

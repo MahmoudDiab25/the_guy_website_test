@@ -1,0 +1,47 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: right;
+  direction: rtl;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+li[aria-hidden="false"] div {
+  height: 571px !important;
+  max-height: unset;
+}
+
+li[class$="dot--active"] button {
+  background: #3fbb6b;
+  border-color: #3fbb6b;
+}
+
+li[class$="carousel-dot "] button {
+  border-color: grey;
+}
+
+@media only screen and (min-width: 990px) {
+  li[aria-hidden="false"] div {
+    height: 500px !important;
+    max-height: 500px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ccc;
+}
+::-webkit-scrollbar-thumb {
+  background: #3fbb6b;
+}
