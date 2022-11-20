@@ -1,0 +1,20 @@
+{
+  "name": "theguytest",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "13.0.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-modal": "^3.16.1",
+    "react-multi-carousel": "^2.8.2",
+    "react-screentype-hook": "^1.0.18",
+    "sass": "^1.56.1"
+  }
+}
